@@ -1,22 +1,24 @@
-/* 
-  Variáveis para cores:
-  --fundo-principal
-  --texto
-  --texto-inverso
-  --destaque
-  --destaque-inverso
-  --fundo-card
+/*TEMA ESCURO
+  --fundo-principal: #121212;
+  --texto: #e0e0e0;
+  --texto-inverso: #121212;
+  --destaque: #bb86fc;
+  --destaque-inverso: #3700b3;
+  --fundo-card: #1e1e1e;
 */
 
-
 :root{
-  --fundo-principal:#f5f5f5;
-  --texto:#333030;
-  --texto-inverso:#ffffff;
-  --destaque:#0077ff;
-  --destaque-inverso:#66bbff;
-  --fundo-card:#ffffff;
+  --fundo-principal: #f3f3f3;
+  --texto: #2e2e2e;
+  --texto-inverso: #ffffff;
+  --destaque: #336699;
+  --destaque-inverso: #88aacc;
+  --fundo-card: #ffffff;
+  
+
+  
 }
+
 
 *{
   margin: 0px;
