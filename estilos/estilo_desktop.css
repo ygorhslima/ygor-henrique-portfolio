@@ -1,10 +1,11 @@
+
 :root{
-  --fundo-principal: #f3f3f3;
-  --texto: #2e2e2e;
-  --texto-inverso: #ffffff;
-  --destaque: #336699;
-  --destaque-inverso: #88aacc;
-  --fundo-card: #ffffff;
+    --fundo-principal: #f3f3f3;
+    --texto: #2e2e2e;
+    --texto-inverso: #ffffff;
+    --destaque: #336699;
+    --destaque-inverso: #88aacc;
+    --fundo-card: #ffffff;
 }
 
 .escuro{
@@ -56,18 +57,25 @@ header #menu ul{
   color: var(--destaque);
 }
 
-
 main{
   display: grid;
-  grid-template-columns: auto 90vw auto;
+  grid-template-columns: 30% 1fr;
+  grid-template-rows: repeat(1,1fr);
+  grid-auto-rows: 1fr;
   gap: 20px;
   margin-top: 20px;
 }
+
 #ficha{
   background-color: var(--fundo-card);
+  width:100%;
+  height: 90vh;
   padding: 20px;
   border-radius: 8px;
-  grid-column: 2/2;
+  grid-row-start: 1;
+  grid-row-end: -1;
+  grid-column-start: 1;
+  grid-column-end: 2;
 }
 
 #ficha img.foto{
@@ -107,7 +115,8 @@ main{
 }
 
 #detalhes{  
-  grid-column: 2/2;
+  grid-row: 1/-1;
+  grid-column: 2/-1;
 }
 
 article{
