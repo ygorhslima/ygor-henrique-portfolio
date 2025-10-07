@@ -1,4 +1,4 @@
-import imgPerfil from '../images/img-perfil.jpg'
+import imgPerfil from '../../public/img-perfil.jpg'
 import curriculo from '../curriculo.pdf';
 
 export default function SectionFicha(){
