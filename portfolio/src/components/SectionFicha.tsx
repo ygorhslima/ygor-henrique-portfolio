@@ -22,6 +22,7 @@ export default function SectionFicha(){
                 <a href={curriculo} target="_blank" rel="external" type="application/pdf">
                     <i className="fa-solid fa-file"></i>
                 </a>
+                <br />
             </div>
         </section>
     )
