@@ -1,14 +1,14 @@
-import imgHtml from '../../public/html5.svg';
-import imgCss from '../../public/css3.svg';
-import imgJs from '../../public/javascript.svg';
-import imgNode from '../../public/nodejs.svg';
-import imgMysql from '../../public/mysql.svg';
-import imgReact from '../../public/react.svg'
-import imgGit from '../../public/git.svg';
-import imgGitHub from '../../public/github.svg';
-import imgPacoteOffice from '../../public/office.svg';
-import imgWindows from '../../public/windows.svg';
-import imgLinux from '../../public/linux.svg';
+import imgHtml from '../assets/html5.svg';
+import imgCss from '../assets/css3.svg';
+import imgJs from '../assets/javascript.svg';
+import imgNode from '../assets/nodejs.svg';
+import imgMysql from '../assets/mysql.svg';
+import imgReact from '../assets/react.svg'
+import imgGit from '../assets/git.svg';
+import imgGitHub from '../assets/github.svg';
+import imgPacoteOffice from '../assets/office.svg';
+import imgWindows from '../assets/windows.svg';
+import imgLinux from '../assets/linux.svg';
 
 
 export default function ArticleSkills(){
