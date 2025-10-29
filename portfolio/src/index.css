@@ -47,6 +47,9 @@ header {
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
 }
 
 header #menu ul {
@@ -172,6 +175,7 @@ article#video .video-container {
 
 .item .img-hardskill img{
   width: 50px;
+  cursor: pointer;
 }
 
 .container-softskills{
@@ -255,7 +259,7 @@ article#video .video-container {
 }
 
 #projeto-container .foto{
-  width: 100%;
+  width: 80%;
   aspect-ratio: 16/9;
   object-fit: cover;
   overflow: hidden;
@@ -318,40 +322,52 @@ footer a:hover{
   }
   #projeto-container .foto{
     aspect-ratio: 1/1;
-    max-width: 20%;
-    max-height: 200px;
+    max-width: 100%;
+    max-height: 300px;
   }
 }
-
 /* ===== Estilo para DESKTOP (a partir de 768px) ===== */
 @media screen and (min-width: 768px) {
+  html, body {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   main {
-    flex: 1 1 auto;
     display: grid;
     grid-template-columns: 30% 1fr;
-    gap: 20px;
-    padding: 20px;
-    overflow: hidden; /* impede scroll no main, só nos filhos */
+    height: 100vh;
+    /* 🟩 Adiciona espaçamento abaixo do menu */
+    padding-top: 60px; /* ajuste conforme a altura do header */
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10; /* garante que fique por cima */
   }
 
   #ficha {
+    grid-column: 1/2;
     background-color: var(--fundo-card);
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
     padding: 20px;
     border-radius: 8px;
-    grid-row-start: 1;
-    grid-row-end: -1;
-    grid-column-start: 1;
-    grid-column-end: 2;
+    position: sticky;
+    top: 60px; /* 🟩 igual ao padding-top do main */
+    align-self: start;
+    height: calc(100vh - 60px); /* 🟩 altura ajustada */
+    overflow-y: auto;
   }
 
-  #detalhes {  
-    grid-row: 1/2;
-    grid-column: 2/2;
-    height: 100%;
+  #detalhes {
+    grid-column: 2/3;
     overflow-y: auto;
-    padding-right: 10px;
+    padding: 20px;
+    height: calc(100vh - 60px); /* 🟩 mesma altura ajustada */
+  }
+
+  #projeto-container .projeto a{
+    display: block;
+    text-align: center;
   }
 }

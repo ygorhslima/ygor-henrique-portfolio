@@ -13,17 +13,61 @@ import imgLinux from '../assets/linux.svg';
 
 export default function ArticleSkills(){
     const listaHardSkills = [
-        {"img":imgHtml,"text":"HTML"},
-        {"img":imgCss,"text":"CSS"},
-        {"img":imgJs,"text":"JavaScript"},
-        {"img":imgNode,"text":"Nodejs"},
-        {"img":imgMysql,"text":"MySQL"},
-        {"img":imgReact,"text":"React"},
-        {"img":imgGit,"text":"Git"},
-        {"img":imgGitHub,"text":"Github"},
-        {"img":imgPacoteOffice,"text":"Pacote Office"},
-        {"img":imgWindows,"text":"Windows"},
-        {"img":imgLinux,"text":"Linux"}
+        {
+            "img":imgHtml,
+            "text":"HTML",
+            "link":"https://developer.mozilla.org/pt-BR/docs/Web/HTML"
+        },
+        {
+            "img":imgCss,
+            "text":"CSS",
+            "link":"https://developer.mozilla.org/pt-BR/docs/Web/CSS"
+        },
+        {
+            "img":imgJs,
+            "text":"JavaScript",
+            "link":"https://developer.mozilla.org/pt-BR/docs/Web/JavaScript"
+        },
+        {
+            "img":imgNode,
+            "text":"Nodejs",
+            "link":"https://developer.mozilla.org/pt-BR/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/Introduction"
+        },
+        {
+            "img":imgMysql,
+            "text":"MySQL",
+            "link":"https://dev.mysql.com/doc/"
+        },
+        {
+            "img":imgReact,
+            "text":"React",
+            "link":"https://pt-br.react.dev/"
+        },
+        {
+            "img":imgGit,
+            "text":"Git",
+            "link":"https://git-scm.com/docs/git/pt_BR"
+        },
+        {
+            "img":imgGitHub,
+            "text":"Github",
+            "link":"https://github.com/"
+        },
+        {
+            "img":imgPacoteOffice,
+            "text":"Pacote Office",
+            "link":"https://www.microsoft.com/pt-br/microsoft-365"
+        },
+        {
+            "img":imgWindows,
+            "text":"Windows",
+            "link":"https://www.microsoft.com/pt-br/windows/?r=1"
+        },
+        {
+            "img":imgLinux,
+            "text":"Linux",
+            "link":"https://www.linux.org/"
+        }
     ]
 
     const listaSoftSkills = [
@@ -43,12 +87,12 @@ export default function ArticleSkills(){
 
                 <div className="container-hardskills">
                     {
-                        listaHardSkills.map(({ img,text })=>{
+                        listaHardSkills.map(({ img,text, link })=>{
                             return(
                                 <div className='item'>
-                                    <div className='img-hardskill'>
+                                    <a className='img-hardskill' href={link} target='_blank'>
                                         <img src={img} alt={text} />
-                                    </div>
+                                    </a>
                                     <div className='skill'>{text}</div>
                                 </div>
                             )

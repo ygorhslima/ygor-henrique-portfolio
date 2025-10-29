@@ -10,18 +10,18 @@ export default function Header(){
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="#skills">
                         <i className="fa-solid fa-brain"></i>
                     </a>
                 </li>
 
                 <li>
-                    <a href="#">
+                    <a href="#formacao">
                         <i className="fa-solid fa-graduation-cap"></i>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="#projetos">
                         <i className="fa-solid fa-trowel-bricks"></i>
                     </a>
                 </li>
