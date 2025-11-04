@@ -1,5 +1,8 @@
 import imgBookmark from '../assets/img-bookmark-landing-page.png'
 import imgSpace from '../assets/img-Space-tourism-website.png'
+import imgSection from '../assets/img-SectionDropdownNavigation.png'
+import imgSunnySide from '../assets/img-Sunnyside-agency.png'
+
 export default function ArticleProjetos(){
     const listaProjetos = [
         {
@@ -17,6 +20,22 @@ export default function ArticleProjetos(){
             "descricao":"é um site interativo de uma agência espacial",
             "descricaoDetalhada":"um site completo, interativo, imersivo e responsivo de um tour de uma agência espacial, utilizando técnicas de animações de elementos dentro do site e criação de sliders, os chamados carrossel",
             "link":"https://ygorhslima.github.io/frontend-mentor-exercises/space-tourism-website-figma/src/index.html"
+        },
+        {
+            "imagemProjeto":`${imgSection}`,
+            "periodo":"2025",
+            "titulo":"Section With Dropdown Navigation",
+            "descricao":"Um site responsivo utilizando bootstrap para criação de dropdowns no menu do site.",
+            "descricaoDetalhada":"Um site responsivo utilizando bootstrap, ferramenta utilizada para criar estilos prontos e que funcionam em qualquer aparelho",
+            "link":"https://ygorhslima.github.io/frontend-mentor-exercises/intro-section-with-dropdown-navigation-main/intro-section-with-dropdown-navigation-main/index.html"
+        },
+        {
+            "imagemProjeto":`${imgSunnySide}`,
+            "periodo":"2025",
+            "titulo":"Sunnyside Agency Landing Page",
+            "descricao":"Uma landing page para a agência Sunnyside, focada em layout responsivo com HTML e CSS.",
+            "descricaoDetalhada":"Sunnyside é uma agência fictícia responsável ajudar marcas a crescerem rapidamente. Focado em design e em marketing",
+            "link":"https://ygorhslima.github.io/frontend-mentor-exercises/sunnyside-agency-landing-page-main/"
         },
     ]
     
