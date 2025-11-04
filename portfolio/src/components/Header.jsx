@@ -1,4 +1,18 @@
+import { useState, useEffect } from "react"
+
 export default function Header(){
+    
+    const [temaEscuro, setTemaEscuro] = useState(false)
+
+    useEffect(()=>{
+        if(temaEscuro){
+            document.body.classList.add("escuro")
+        }else{
+            document.body.classList.remove("escuro")
+        }
+    },[temaEscuro])
+
+    
     return(
     <header>
         <nav id="menu">
@@ -26,7 +40,18 @@ export default function Header(){
                     </a>
                 </li>
                 <li>
-                    <a href="" id="botao-tema"></a>
+                    <button id="botao-tema"
+                        onClick={()=>{
+                            setTemaEscuro(!temaEscuro)
+                        }}
+                    >{
+                        temaEscuro ? (
+                            <i className="fa-solid fa-sun"></i>
+                        ):(
+                            <i className="fa-solid fa-moon"></i>
+                        )
+                    }
+                    </button>
                 </li>
             </ul>
         </nav>

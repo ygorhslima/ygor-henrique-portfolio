@@ -281,6 +281,13 @@ footer a:hover{
   color: var(--destaque-inverso);
 }
 
+
+#botao-tema{
+  border: none;
+  background: none;
+  color: var(--texto-inverso);
+}
+
 /* ===== Estilo para MOBILE (até 768px) ===== */
 @media screen and (max-width: 768px) {
   main {
