@@ -1,21 +1,22 @@
 /* ===== Estilos globais (valem para todos os tamanhos) ===== */
 :root {
-  --fundo-principal: #f3f3f3;
-  --texto: #2e2e2e;
+  --fundo-principal: #f5f7fa;
+  --texto: #1e293b;
   --texto-inverso: #ffffff;
-  --destaque: #336699;
-  --destaque-inverso: #88aacc;
+  --destaque: #2563eb;         /* azul vibrante */
+  --destaque-inverso: #93c5fd; /* azul suave */
   --fundo-card: #ffffff;
 }
 
 .escuro {
-  --fundo-principal: #121212;
-  --texto: #e0e0e0;
-  --texto-inverso: #121212;
-  --destaque: #bb86fc;
-  --destaque-inverso: #3b1d83;
-  --fundo-card: #1e1e1e;
+  --fundo-principal: #0f172a;
+  --texto: #e2e8f0;
+  --texto-inverso: #0f172a;
+  --destaque: #3b82f6;         /* azul principal */
+  --destaque-inverso: #1e40af; /* azul escuro */
+  --fundo-card: #1e293b;
 }
+
 
 * {
   margin: 0;
@@ -40,10 +41,10 @@ main{
   height: 100%;
 }
 header {
-  flex: 1  1 auto;
+  flex: 0 0 auto;
   background-color: var(--destaque);
   color: var(--texto);
-  padding: 10px;
+  padding: 0px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -57,6 +58,15 @@ header #menu ul {
   display: flex;
   gap: 10px;
 }
+header #menu ul li{
+  display: flex;
+  align-items: center;
+}
+
+i {
+  vertical-align: middle;
+}
+
 
 #menu a {
   text-decoration: none;
@@ -285,11 +295,22 @@ footer a:hover{
 }
 
 
-#botao-tema{
+#botao-tema {
   border: none;
   background: none;
   color: var(--texto-inverso);
+  font-weight: 600;
+  padding: 12px 15px; /* mesmo que os links */
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.6s, color 0.5s;
 }
+
+#botao-tema:hover {
+  background-color: var(--destaque-inverso);
+  color: var(--destaque);
+}
+
 
 /* ===== Estilo para MOBILE (até 768px) ===== */
 @media screen and (max-width: 768px) {
