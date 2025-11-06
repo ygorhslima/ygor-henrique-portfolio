@@ -3,8 +3,8 @@
   --fundo-principal: #f5f7fa;
   --texto: #1e293b;
   --texto-inverso: #ffffff;
-  --destaque: #2563eb;         /* azul vibrante */
-  --destaque-inverso: #93c5fd; /* azul suave */
+  --destaque: #3b82f6;         /* azul mais suave */
+  --destaque-inverso: #bfdbfe; /* azul claro */
   --fundo-card: #ffffff;
 }
 
@@ -12,10 +12,11 @@
   --fundo-principal: #0f172a;
   --texto: #e2e8f0;
   --texto-inverso: #0f172a;
-  --destaque: #3b82f6;         /* azul principal */
-  --destaque-inverso: #1e40af; /* azul escuro */
+  --destaque: #60a5fa;         /* azul suave no escuro */
+  --destaque-inverso: #1e3a8a; /* azul escuro */
   --fundo-card: #1e293b;
 }
+
 
 
 * {
