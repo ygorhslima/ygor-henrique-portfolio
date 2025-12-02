@@ -1,17 +1,18 @@
-import algoritmo from '../assets/certificados/algoritmo.pdf'
+import algoritmo from '../../assets/certificados/algoritmo.pdf'
 
-import html1 from '../assets/certificados/html-css-modulo1.pdf'
-import html2 from '../assets/certificados/html-css-modulo2.pdf'
-import html3 from '../assets/certificados/html-css-modulo3.pdf'
-import html4 from '../assets/certificados/html-css-modulo4.pdf'
+import html1 from '../../assets/certificados/html-css-modulo1.pdf'
+import html2 from '../../assets/certificados/html-css-modulo2.pdf'
+import html3 from '../../assets/certificados/html-css-modulo3.pdf'
+import html4 from '../../assets/certificados/html-css-modulo4.pdf'
 
-import javascript from '../assets/certificados/javascript.pdf'
-import mysql from '../assets/certificados/mysql.pdf'
-import linux from '../assets/certificados/linux.pdf'
-import seo from '../assets/certificados/seo.pdf'
-import ingles1 from '../assets/certificados/ingles1.pdf'
+import javascript from '../../assets/certificados/javascript.pdf'
+import mysql from '../../assets/certificados/mysql.pdf'
+import linux from '../../assets/certificados/linux.pdf'
+import seo from '../../assets/certificados/seo.pdf'
+import ingles1 from '../../assets/certificados/ingles1.pdf'
+import Certificado from './../Certificado/Certificado'
 
-import Certificado from './Certificado'
+import './style.css'
 
 export default function ArticleFormacao(){
 

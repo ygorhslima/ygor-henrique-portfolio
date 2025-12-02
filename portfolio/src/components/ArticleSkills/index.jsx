@@ -1,15 +1,15 @@
-import imgHtml from '../assets/html5.svg';
-import imgCss from '../assets/css3.svg';
-import imgJs from '../assets/javascript.svg';
-import imgNode from '../assets/nodejs.svg';
-import imgMysql from '../assets/mysql.svg';
-import imgReact from '../assets/react.svg'
-import imgGit from '../assets/git.svg';
-import imgGitHub from '../assets/github.svg';
-import imgPacoteOffice from '../assets/office.svg';
-import imgWindows from '../assets/windows.svg';
-import imgLinux from '../assets/linux.svg';
-
+import imgHtml from '../../assets/html5.svg';
+import imgCss from '../../assets/css3.svg';
+import imgJs from '../../assets/javascript.svg';
+import imgNode from '../../assets/nodejs.svg';
+import imgMysql from '../../assets/mysql.svg';
+import imgReact from '../../assets/react.svg'
+import imgGit from '../../assets/git.svg';
+import imgGitHub from '../../assets/github.svg';
+import imgPacoteOffice from '../../assets/office.svg';
+import imgWindows from '../../assets/windows.svg';
+import imgLinux from '../../assets/linux.svg';
+import './style.css'
 
 export default function ArticleSkills(){
     const listaHardSkills = [

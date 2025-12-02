@@ -1,4 +1,4 @@
-import { use, useState } from "react"
+import { useState } from "react"
 import './certificado.css'
 
 
@@ -13,9 +13,12 @@ export default function Certificado({link, curso}){
                     <div className="overlay" onClick={()=>setMostrarPDF(false)}></div>
                     <div className="conteudo">
                         <h3>{curso}</h3>
-                        <embed src={link} width="100%" height="600px" type="application/pdf" />
+                        {/* MODIFICAÇÃO: Altura ajustada para 100% para ser controlada pelo CSS */}
+                        <embed src={link} width="100%" height="100%" type="application/pdf" />
+                        
+                        {/* NOVO: Botão Fechar dentro do .conteudo para melhor posicionamento */}
+                        <button className="fechar-modal" onClick={()=>setMostrarPDF(false)}>Fechar</button>
                     </div>
-                    <button onClick={()=>setMostrarPDF(false)}>Fechar</button>
                 </div>
             )}
         </div>

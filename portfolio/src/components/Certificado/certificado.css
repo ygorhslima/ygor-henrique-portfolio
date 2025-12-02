@@ -49,8 +49,15 @@ button:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
     width: 90%;
     max-width: 900px;
+    /* MODIFICAÇÃO: Usando max-height e height: auto para tornar o modal menor */
+    max-height: 100vh; /* Altura máxima de 80% da viewport */
+    height: auto;
     z-index: 1000;
     animation: aparecer 0.3s ease;
+    
+    /* MODIFICAÇÃO: Ajuste para organizar o conteúdo internamente */
+    display: flex;
+    flex-direction: column;
 }
 
 /* Animação suave de entrada */
@@ -70,29 +77,47 @@ button:hover {
     margin-bottom: 10px;
     text-align: center;
     color: var(--destaque-inverso);
+    /* Garante que o título não roube espaço do PDF */
+    flex-shrink: 0; 
 }
 
 /* Embed (PDF) ajustado */
 .conteudo embed {
     border-radius: 10px;
     border: 1px solid var(--destaque-inverso);
+    /* MODIFICAÇÃO: Garante que o embed ocupe todo o espaço restante */
+    flex-grow: 1; 
+    height: 100%; /* Essencial para preencher a altura do contêiner */
+    width: 100%;
+    min-height: 400px; /* Garante uma altura mínima para visualização */
 }
 
-/* Botão “Fechar” */
-.modal > button {
+/* Botão “Fechar” NOVO */
+.conteudo .fechar-modal {
+    /* Reposiciona o botão no canto superior direito */
     position: absolute;
-    bottom: 20px;
+    top: 10px;
+    right: 10px;
+    
+    /* Estilização */
     background-color: red;
-    padding: 8px 16px;
-    border-radius: 8px;
+    padding: 15px 30px;
     color: white;
     font-weight: bold;
-    right: 50%;
-    transform: translateX(50%);
     cursor: pointer;
     transition: background 0.3s;
+    line-height: 1;
+    z-index: 1010; 
+    content: 'X';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 0;
 }
 
-.modal > button:hover {
+.conteudo .fechar-modal:hover {
     background-color: #c53030;
+    transform: scale(1.05);
 }

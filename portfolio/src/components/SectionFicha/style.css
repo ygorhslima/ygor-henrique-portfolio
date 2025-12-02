@@ -1,0 +1,43 @@
+
+
+/* ===== Elementos comuns (valem para todos os tamanhos) ===== */
+#ficha img.foto {
+  width: 200px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--fundo-card);
+  outline: 5px solid var(--destaque);
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+  transition: 0.4s;
+}
+#ficha img.foto:hover{
+  transform: scale(1.1);
+  box-shadow: 1px 1px 20px black;
+}
+
+#ficha h1 {
+  color: var(--destaque);
+  margin: 15px 0;
+  font-size: 1.8em;
+  text-align: left;
+}
+
+#social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+  gap: 10px;
+  margin-top: 15px;
+}
+#social a {
+  color: var(--destaque);
+  transition: 0.5s;
+}
+#social a:hover {
+  color: var(--destaque-inverso);
+  transform: scale(1.3);
+}

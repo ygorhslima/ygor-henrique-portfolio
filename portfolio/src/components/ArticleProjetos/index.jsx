@@ -1,8 +1,8 @@
-import imgBookmark from '../assets/img-bookmark-landing-page.png'
-import imgSpace from '../assets/img-Space-tourism-website.png'
-import imgSection from '../assets/img-SectionDropdownNavigation.png'
-import imgSunnySide from '../assets/img-Sunnyside-agency.png'
-
+import imgBookmark from '../../assets/img-bookmark-landing-page.png'
+import imgSpace from '../../assets/img-Space-tourism-website.png'
+import imgSection from '../../assets/img-SectionDropdownNavigation.png'
+import imgSunnySide from '../../assets/img-Sunnyside-agency.png'
+import './style.css'
 export default function ArticleProjetos(){
     const listaProjetos = [
         {
