@@ -1,9 +1,9 @@
-import './footer.css'
+import './style.css'
 
 export default function Footer(){
     return(
         <footer>
-            <h1>Site </h1>
+            <h1>Footer do meu site</h1>
         </footer>
     )
 }

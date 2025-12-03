@@ -1,6 +1,6 @@
-import ArticleFormacao from "./ArticleFormacao"
-import ArticleProjetos from "./ArticleProjetos"
-import ArticleSkills from "./ArticleSkills"
+import ArticleFormacao from "../ArticleFormacao"
+import ArticleProjetos from "../ArticleProjetos"
+import ArticleSkills from "../ArticleSkills"
 
 export default function SectionDetalhes(){
     return(
